@@ -1,0 +1,32 @@
+body{
+
+    position: absolute;
+    
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    /* A background image is set to be displayed on page. */
+    background-image: url("https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940");
+    /* The width and height are set as 100 to fit the entire image. */
+    width: 100vw;
+    height: 100vh;
+    /* The background size is also set as cover to cover the entire page. Overfollow hidden disables any scrolling.*/
+    background-size: cover;
+    overflow:hidden;
+}
+fieldset{
+    background-color: white;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+
+    /* Centers the fieldset */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+legend{
+    color: red;
+    font-weight: bold;
+    font-size: 50px;
+}
