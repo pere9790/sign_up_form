@@ -1,32 +1,63 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
+body{
     position: absolute;
-    
     align-items: center;
     text-align: center;
     margin: auto;
-    /* A background image is set to be displayed on page. */
     background-image: url("https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940");
-    /* The width and height are set as 100 to fit the entire image. */
     width: 100vw;
     height: 100vh;
-    /* The background size is also set as cover to cover the entire page. Overfollow hidden disables any scrolling.*/
     background-size: cover;
-    overflow:hidden;
+    font-family: "Oxygen", sans-serif;
 }
 fieldset{
-    background-color: white;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-
-    /* Centers the fieldset */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    border: none;
 }
 legend{
     color: red;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 25px;
+}
+.main{
+    display: block;
+    position:relative;
+    justify-content: center;
+    margin:auto;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.411);
+    border-radius: 15%;
+    box-shadow: 0px 0px 20px 0px rgb(234, 98, 184);
+    color:white;
+    width: 35vw;
+    height: 85vh;
+    border: 2px solid #bd8484;
+    top:10vh;
+}
+.title{
+    font-size: 3vw;
+    color: white;
+    font-weight: bold;
+
+}
+
+input, select {
+    width: 25vw;
+    height: 1vh;
+    padding: 15px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    height: 5vh;
+    width: 20vw;
+    font: bold;
+    color: white;
+    background-color: red;
+    border-radius: 20px;
+    margin-top: 1rem;
+
 }

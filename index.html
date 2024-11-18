@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <main>
+    <div class="main">
+    <main>        
+        <div class="title">Sign-up </div>
     <fieldset>
+
         <legend>Personal Information</legend>
         <div class="wrapper">
             <form method="post" action="">
@@ -41,12 +43,12 @@
             <!--Adress-->
                 <div>
                     <label for="address-one">Address #: </label>
-                    <input autocomplete="address-line1" required type="text" id="address-one" name="address-one" placeholder="Ex. 130 Rizzler Lane">
+                    <input autocomplete="address-line1" required type="text" id="address-one" name="address-one" placeholder="Ex. 130 Apple Street">
                 </div>
             <!--City-->
                 <div>
                     <label for="city">City: </label>
-                    <input autocomplete="address-level2" required type="text" id="city" name="city" placeholder="Ex. Philidephia">
+                    <input autocomplete="address-level2" required type="text" id="city" name="city" placeholder="Ex. Philadelphia ">
                 </div>
             <!--State-->
                 <div>
@@ -123,14 +125,20 @@
                                 </div>
                             <!--Password-->
                                 <div>
-                                    <label for="user-name">Password: </label>
-                                    <input autocomplete="user-name1" required type="text" id="user-name" name="user-name" placeholder="Ex. Password123">
+                                    <label for="Password1">Password: </label>
+                                    <input autocomplete="user-name1" required type="password" name="user-name" placeholder="Ex. Password123"  id="Password1" oninput="validate()" >
                                 </div>
-                            <button>Sign-Up</button>
+                                <div>
+                                    <label for="Password2"> Re-Enter: </label>
+                                    <input autocomplete="user-name1" required type="password"name="user-name" placeholder="Ex. Password123"  id="Password2" oninput="validate()" >
+                                    <p id="validate" style="color:rgba(216, 21,21,0);"></p>
+                                </div>
+                            <button id="submit">Sign-Up</button>
                         </form>
                     </div>
                 </fieldset>
     </main>
-
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
